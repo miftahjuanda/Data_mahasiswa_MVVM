@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.beranda.view.MainActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_dark"
+    android:elevation="1dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbar"
+    android:scrollbars="vertical"
+    android:scrollingCache="true"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/list_item" />
+
+<ProgressBar
+    android:id="@+id/pb_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:indeterminateDrawable="@drawable/progress"
+    android:visibility="gone" />
+
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/margin13"
+    android:backgroundTint="@android:color/holo_blue_dark"
+    android:focusable="true"
+    android:src="@drawable/ic_add"
+    app:rippleColor="@android:color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:fillViewport="true"
+    tools:context=".ui.register.view.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin7"
+        android:gravity="top|center_vertical"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ProgressBar
+            android:id="@+id/pb_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/progress"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin7"
+            android:padding="5dp"
+            android:text="@string/info2"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="@dimen/margin24"
+            android:textSize="@dimen/text36"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin24"
+            android:layout_marginTop="@dimen/margin10"
+            android:padding="@dimen/margin5"
+            android:text="@string/info5"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginStart="@dimen/margin36"
+            android:layout_marginEnd="@dimen/margin36"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/emas"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="20dp"
+                android:hint="@string/username"
+                android:padding="20dp"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/emas"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="20dp"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/emas"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:backgroundTint="@color/emas"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="20dp"
+                android:hint="@string/pass_konfirm"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/margin17"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:background="@drawable/bg_btn2"
+                android:backgroundTint="@color/emas"
+                android:text="@string/daftar"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/info_akun1"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin5"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

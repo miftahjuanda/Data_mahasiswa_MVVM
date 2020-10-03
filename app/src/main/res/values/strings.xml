@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Mahasiswa_App_Miftah</string>
+    <string name="nama">Nama</string>
+    <string name="noHP">085276767677</string>
+    <string name="alamat">Jl. Bangau</string>
+    <string name="btn">btn</string>
+    <string name="no_internet">Silahkan Periksa Koneksi Internet Anda</string>
+    <string name="close">Tutup</string>
+    <string name="logo">logo</string>
+    <string name="hp">Nomor Handphone</string>
+    <string name="jl">Alamat</string>
+    <string name="save">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="hapus">HAPUS DATA ?</string>
+    <string name="note_delete">Pastikan Kembali Data Yang Ingin Anda Hapus</string>
+    <string name="del">Hapus</string>
+    <string name="update">Update</string>
+    <string name="login">Login</string>
+    <string name="info_akun1">Sudah Punya Akun ??</string>
+    <string name="info2">Buat Akun \nAnda</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="daftar">DAFTAR</string>
+    <string name="info3">Sudah Punya Akun ?</string>
+    <string name="registrasi">Registrasi</string>
+    <string name="info4">Selamat Datang, \nSilahkan Registrasi Jika Belum Punya Akun</string>
+    <string name="info5">Selamat Datang, Silahkan Lengkapi \nHarap Isi Kolom di Bawah Ini Dengan Lengkap</string>
+    <string name="pass_konfirm">Konfirmasi Password</string>
+    <string name="selamat_datang">SELAMAT DATANG</string>
+</resources>
