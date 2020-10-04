@@ -79,8 +79,6 @@ class LoginActivity : AppCompatActivity() {
         session.email = user.data?.get(0)?.userEmail
         session.name = user.data?.get(0)?.userNama
         session.login = true
-        Log.d("sessionManager1", session.name.toString())
-        Log.d("sessionManager2", session.email.toString())
         startActivity(Intent(this, MainActivity::class.java))
     }
 

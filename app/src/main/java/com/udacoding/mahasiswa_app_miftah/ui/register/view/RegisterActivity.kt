@@ -69,36 +69,12 @@ class RegisterActivity : AppCompatActivity() {
             val passwordConfirm = edt_password_confirm.text.toString()
 
             viewModel.register(username, email, password, passwordConfirm)
-            //startActivity(Intent(this, LoginActivity::class.java))
         }
 
         tv_login.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
-
-    /*override fun successRegister(responseRegister: ResponseRegister) {
-        startActivity(Intent(this, LoginActivity::class.java))
-    }
-
-    override fun errorRegister(msg: String) {
-        showToast(msg)
-    }
-
-    override fun empty() {
-    }
-
-    override fun passwordConfirm() {
-        showToast("password tidak cocok")
-    }
-
-    override fun progresVisible() {
-        pb_main.visibility = View.VISIBLE
-    }
-
-    override fun progresGone() {
-        pb_main.visibility = View.GONE
-    }*/
 
     fun showToast(msg: String) {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
